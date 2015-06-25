@@ -1,0 +1,66 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.tinsaye.decisionmaker.Welcome"
+    android:background="#ff3fa4ff">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Welcome"
+        android:id="@+id/textHi"
+        android:layout_marginTop="198dp"
+        android:textColor="#ff000000"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Please decide how to decide"
+        android:id="@+id/textHi2"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="#ff000000" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Coin Toss"
+        android:id="@+id/coinToss"
+        android:layout_below="@+id/textHi2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="71dp"
+        android:textColor="#fffff9fb"
+        android:background="#ff000000" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dice"
+        android:id="@+id/dice"
+        android:layout_alignTop="@+id/coinToss"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@+id/textHi2"
+        android:layout_toEndOf="@+id/textHi2"
+        android:textColor="#fffff9fb"
+        android:background="#ff000000" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Random Pick"
+        android:id="@+id/randomPick"
+        android:textColor="#fffff9fb"
+        android:background="#ff000000"
+        android:onClick="mainMenuOnClick"
+        android:layout_alignTop="@+id/dice"
+        android:layout_alignLeft="@+id/textHi"
+        android:layout_alignStart="@+id/textHi" />
+</RelativeLayout>
